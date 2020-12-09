@@ -15,6 +15,8 @@
 		3A6D088D25807834000C934E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6D088B25807834000C934E /* LaunchScreen.storyboard */; };
 		3A6D089625807A15000C934E /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D089525807A15000C934E /* Lorem.swift */; };
 		3A6D089925812372000C934E /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D089825812372000C934E /* NetworkingManager.swift */; };
+		3A6D089D25813AB2000C934E /* LoremTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D089B25813AB2000C934E /* LoremTableViewCell.swift */; };
+		3A6D089E25813AB2000C934E /* LoremTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6D089C25813AB2000C934E /* LoremTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3A6D088E25807835000C934E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A6D089525807A15000C934E /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
 		3A6D089825812372000C934E /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		3A6D089B25813AB2000C934E /* LoremTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremTableViewCell.swift; sourceTree = "<group>"; };
+		3A6D089C25813AB2000C934E /* LoremTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoremTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				3A6D088E25807835000C934E /* Info.plist */,
 				3A6D089525807A15000C934E /* Lorem.swift */,
 				3A6D089825812372000C934E /* NetworkingManager.swift */,
+				3A6D089B25813AB2000C934E /* LoremTableViewCell.swift */,
+				3A6D089C25813AB2000C934E /* LoremTableViewCell.xib */,
 			);
 			path = LoremPicsumHW;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6D088D25807834000C934E /* LaunchScreen.storyboard in Resources */,
+				3A6D089E25813AB2000C934E /* LoremTableViewCell.xib in Resources */,
 				3A6D088A25807834000C934E /* Assets.xcassets in Resources */,
 				3A6D088825807814000C934E /* Main.storyboard in Resources */,
 			);
@@ -148,6 +155,7 @@
 				3A6D088125807814000C934E /* AppDelegate.swift in Sources */,
 				3A6D089925812372000C934E /* NetworkingManager.swift in Sources */,
 				3A6D088325807814000C934E /* SceneDelegate.swift in Sources */,
+				3A6D089D25813AB2000C934E /* LoremTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

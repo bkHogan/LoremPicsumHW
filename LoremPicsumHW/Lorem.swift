@@ -13,7 +13,7 @@ struct Lorem: Decodable {
     
     enum CodingKeys: String, CodingKey {
         case id
-        case url
+        case download_url
     }
     
 //    enum URLCodingKeys: String, CodingKey {
@@ -29,6 +29,6 @@ struct Lorem: Decodable {
 //            container.nestedContainer(keyedBy: URLCodingKeys.self, forKey: .url)
         self.id = try container.decode(String.self, forKey: .id)
         self.loremImageURL = try
-            container2.decode(URL.self, forKey: .url)
+            container2.decode(URL.self, forKey: .download_url)
     }
 }
