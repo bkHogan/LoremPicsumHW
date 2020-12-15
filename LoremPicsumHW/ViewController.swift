@@ -110,3 +110,13 @@ extension ViewController: UITableViewDataSourcePrefetching {
   }
 }
 
+extension ViewController:UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let editVC = storyboard.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        
+        // editVC.editText = textToEdit as? String
+        editVC.delegate = self
+        self.navigationController?.pushViewController(editVC, animated: true)
+    }
+}

@@ -18,6 +18,7 @@
 		3A6D089D25813AB2000C934E /* LoremTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D089B25813AB2000C934E /* LoremTableViewCell.swift */; };
 		3A6D089E25813AB2000C934E /* LoremTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6D089C25813AB2000C934E /* LoremTableViewCell.xib */; };
 		3A6D08A125840700000C934E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D08A025840700000C934E /* ImageCache.swift */; };
+		3A6D08A4258963EE000C934E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D08A3258963EC000C934E /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3A6D089B25813AB2000C934E /* LoremTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremTableViewCell.swift; sourceTree = "<group>"; };
 		3A6D089C25813AB2000C934E /* LoremTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoremTableViewCell.xib; sourceTree = "<group>"; };
 		3A6D08A025840700000C934E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		3A6D08A3258963EC000C934E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				3A6D089B25813AB2000C934E /* LoremTableViewCell.swift */,
 				3A6D089C25813AB2000C934E /* LoremTableViewCell.xib */,
 				3A6D08A025840700000C934E /* ImageCache.swift */,
+				3A6D08A3258963EC000C934E /* DetailViewController.swift */,
 			);
 			path = LoremPicsumHW;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				3A6D088325807814000C934E /* SceneDelegate.swift in Sources */,
 				3A6D08A125840700000C934E /* ImageCache.swift in Sources */,
 				3A6D089D25813AB2000C934E /* LoremTableViewCell.swift in Sources */,
+				3A6D08A4258963EE000C934E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

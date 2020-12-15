@@ -28,7 +28,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ1-sk-nux">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ1-sk-nux">
                         <rect key="frame" x="210" y="10" width="100" height="56"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -55,7 +55,6 @@
             <connections>
                 <outlet property="frontImageView" destination="QqK-fP-fjP" id="yx3-TV-SOP"/>
                 <outlet property="loremNameLabel" destination="ZiJ-9V-JWH" id="LzY-8o-6HJ"/>
-                <outlet property="speciesNameLabel" destination="PZ1-sk-nux" id="5DE-sb-sR4"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="63.616071428571423"/>
         </tableViewCell>
