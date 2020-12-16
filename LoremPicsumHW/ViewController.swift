@@ -22,11 +22,6 @@ class ViewController: UIViewController {
         self.LoremTableView.register(UINib(nibName: "LoremTableViewCell", bundle: nil), forCellReuseIdentifier: "LoremTableViewCell")
         self.LoremTableView.dataSource = self
         self.LoremTableView.prefetchDataSource = self
-        
-//        self.LoremTableView.register(UINib(nibName: "loremTableViewCell", bundle: nil), forCellReuseIdentifier: "loremTableViewCell")
-//            self.LoremTableView.dataSource = self
-//            self.LoremTableView.prefetchDataSource = self
-        // self.getSingularLorem()
         self.getTenLorem()
     }
             
@@ -60,9 +55,6 @@ class ViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.loremNameLabel?.text = lorem.name
                 }
-//                DispatchQueue.main.async {
-//                        self.loremNameLabel?.text = lorem.name
-//                      }
                       NetworkingManager.shared.getImageData(from: lorem.frontImageURL) { data, error in
                         guard let data = data else { return }
                         DispatchQueue.main.async {
@@ -74,7 +66,6 @@ class ViewController: UIViewController {
 
 }
     private func createRandomLoremURL() -> String {
-        // let randomNumber = Int.)
         let url = "https://pokeapi.co/api/v2/pokemon/"
         return url
     }
@@ -112,11 +103,26 @@ extension ViewController: UITableViewDataSourcePrefetching {
 
 extension ViewController:UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let editVC = storyboard.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        // editVC.editText = textToEdit as? String
-        editVC.delegate = self
-        self.navigationController?.pushViewController(editVC, animated: true)
+        let detailVC = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+//        let detailVC = storyBoard.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+
+        self.present(detailVC, animated: true, completion: nil)
+         //detailVC.editText = textToEdit as? String
+//        detailVC.delegate = self
+        self.navigationController?.pushViewController(detailVC, animated: true)
+        self.LoremTableView.reloadData()
     }
 }
+
+//extension ViewController: DetailViewControllerDelegate {
+//    func update() {
+//        if let selectedIndex = self.LoremTableView.indexPathForSelectedRow?.row{
+//            //self.values[selectedIndex] = newText
+//            self.LoremTableView.reloadData()
+//        }
+//    }
+//
+//
+//}

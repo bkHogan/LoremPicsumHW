@@ -10,10 +10,8 @@ import UIKit
 class LoremTableViewCell: UITableViewCell {
 
     @IBOutlet weak var frontImageView: UIImageView!
-//    @IBOutlet weak var loremImageView: UIImageView!
     
     @IBOutlet weak var loremNameLabel: UILabel!
-//    @IBOutlet weak var loremNameLabel: UILabel!
     @IBOutlet weak var speciesNameLabel: UILabel!
     
     func configure(with lorem: Lorem) {
